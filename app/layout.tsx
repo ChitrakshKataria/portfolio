@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SideNav from '../components/site/SideNav'
-import { siteConfig } from "@/lib/siteInfo";
+import { siteConfig } from "@/lib/siteConfig";
 
 
 export const metadata: Metadata = {
@@ -13,7 +13,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
       <body>
-        <main className="min-h-screen flex item-center justify-center">
+        <main className="min-h-screen flex item-center justify-center mr-30" >
           <div className="flex items-center gap-32">
             <SideNav />
 
