@@ -1,18 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SideNav from '../components/site/SideNav'
-import { siteConfig } from "@/lib/site";
+import { siteConfig } from "@/lib/siteInfo";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title:  siteConfig.title,
@@ -21,11 +11,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col"><SideNav />{children}</body>
+    <html lang="en">
+      <body>
+        <main className="min-h-screen flex item-center justify-center">
+          <div className="flex items-center gap-32">
+            <SideNav />
+
+            <div className="w-[600px]">
+              { children }
+            </div>
+          </div>
+        </main>
+      </body>
     </html>
   );
 }
