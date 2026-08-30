@@ -1,6 +1,5 @@
 import { siteConfig } from "@/lib/siteConfig";
 
-
 export default function Home() {
   return (
     <section className="text-center">
