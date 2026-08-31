@@ -1,4 +1,4 @@
-export default function projects() {
+export default function experince() {
   return (
     <div>
       <h1 className="text-2xl font-bold">Experince Page</h1>
