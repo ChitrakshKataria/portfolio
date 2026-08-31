@@ -10,8 +10,8 @@ const SideNav = () => {
     <nav className="flex flex-col text-right text-sm">
         <Link href="/" className={ pathname === "/" ? "text-[var(--accent)]" : "text-[var(--foreground)]" }>Home</Link>
         <Link href="/blog" className={ pathname === "/blog" ? "text-[var(--accent)]" : "text-[var(--foreground)]" }>Blog</Link>
-        <Link href="/" className={ pathname === "/projects" ? "text-[var(--accent)]" : "text-[var(--foreground)]" }>Projects</Link>
-        <Link href="/" className={ pathname === "/experince" ? "text-[var(--accent)]" : "text-[var(--foreground)]" }>Experince</Link>
+        <Link href="/projects" className={ pathname === "/projects" ? "text-[var(--accent)]" : "text-[var(--foreground)]" }>Projects</Link>
+        <Link href="/experince" className={ pathname === "/experince" ? "text-[var(--accent)]" : "text-[var(--foreground)]" }>Experince</Link>
     </nav>
   )
 }
