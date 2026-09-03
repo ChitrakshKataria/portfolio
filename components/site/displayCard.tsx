@@ -7,20 +7,20 @@ const DisplayCard = ({
   company = "Example company",
   date = "20 Jun - 31 Jun",
   description = "Example description ",
+  ghLink = "https://github.com/ChitrakshKataria",
 }) => {
   return (
-    <Link href="/">
-      {" "}
-      {/* Add a dynamic rout here later on  */}
-        <div className="flex w-full items-center justify-between gap-8 border px-8 text-left">        <div className="flex flex-col items-start gap-2">
+    <Link href={ghLink}>
+      <div className="flex w-full items-center justify-between border px-3 text-left">
+        <div className="flex flex-col items-start ">
           <div className="text-[var(--muted)] text-xs">
-            <p>{date}</p>
+            <p className="mt-2">{date}</p>
           </div>
           <div className="text-left">
-            <h2 className="font-mono text-[15px] font-bold leading-none]">
+            <h2 className="font-mono text-[20px] font-bold leading-none]">
               {title}
             </h2>
-            <p className="mt-3 font-mono text-[15px] leading-normal">
+            <p className="font-mono text-[15px] leading-normal mt-4 mb-3">
               {description}
             </p>
           </div>

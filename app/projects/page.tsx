@@ -15,6 +15,7 @@ export default function projectPage() {
             title={project.title}
             date={project.date}
             description={project.desc}
+            ghLink={project.ghLink}
           />
         );
       })}
