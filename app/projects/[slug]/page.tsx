@@ -4,7 +4,7 @@ type Props = {
 export default async function dynamicProjectPage({ params }: Props) {
     return (
         <div>
-            <h1>CONTESNT GOES HERE</h1>
+            <h1>CONTENT GOES HERE</h1>
         </div>
     );
 }
