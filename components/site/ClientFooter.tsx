@@ -19,5 +19,4 @@ const ClientFooter = () => {
       </div>
   )
 }
-
 export default ClientFooter

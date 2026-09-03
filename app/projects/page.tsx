@@ -11,11 +11,13 @@ export default function projectPage() {
       {projects.map((project) => {
         return (
           <DisplayCard
+            // Drilling the information through
             key={project.title}
             title={project.title}
             date={project.date}
             description={project.desc}
             ghLink={project.ghLink}
+            slug={project.slug}
           />
         );
       })}

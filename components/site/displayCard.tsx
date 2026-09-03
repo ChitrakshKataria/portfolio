@@ -2,15 +2,16 @@ import Link from "next/link";
 import React from "react";
 
 const DisplayCard = ({
-  // Drilling the information through:
+  // reciving  the drilled information with default values:
   title = "Example title",
   company = "Example company",
   date = "20 Jun - 31 Jun",
   description = "Example description ",
-  ghLink = "https://github.com/ChitrakshKataria",
+  ghLink = "https://github.com/ChitrakshKataria", // default link to my gh PROFILE :) (I might remove this later on this page as its no longer needed)
+  slug = "",
 }) => {
   return (
-    <Link href={ghLink}>
+    <Link href={`/projects/${slug}`}>
       <div className="flex w-full items-center justify-between border px-3 text-left">
         <div className="flex flex-col items-start ">
           <div className="text-[var(--muted)] text-xs">
