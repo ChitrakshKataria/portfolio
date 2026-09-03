@@ -9,7 +9,7 @@ export default function blogPage() {
         but I try to keep it updated.
       </p>
       <div className="my-6 h-[1px] w-full bg-[#2a2a2a]" />
-      <p>CONTENT GOES HERE</p>
+      <p>COMING SOON</p>
     </div>
   );
 }

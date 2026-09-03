@@ -1,7 +1,7 @@
 export const siteConfig = {
     name: "Chitraksh Kataria",
     title: "Chitraksh Kataria - Student",
-    description: "Chitraksh Kataria's personal portfolio, I am a studetn at the University Of Stavanger. Explore my project, blog and experince.",
+    description: "Chitraksh Kataria's portfolio, I am a studetn at the University Of Stavanger. On this site you will find all my projects and info about me. I am currently studying computer science in my first year, and have a interest for physics and maths.",
     current: "Student 1st year, University in stavanger",
     url: "http://chitrakshkataria.com",
     email_personal: "chitrakshkatariv3@gmail.com",
