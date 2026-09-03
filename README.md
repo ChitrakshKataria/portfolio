@@ -1,5 +1,5 @@
 # Portfolio
-This is my perosnal that i built with Next.js. For front end it uses react and tailwind css, as for backend its all done in TypeScript JS. This techstack gives portfolio a modern structure. It includes my project, work, skills and more information abot me.
+This is my perosnal that i built with Next.js. For frontend it uses react and tailwind css, as for backend its all done in TypeScript JS. This techstack gives portfolio a modern structure. It includes my project, work, skills and more information abot me.
 
 ## Live demo?
 Try it out at: <a href="https://chitrakshkataria.dev/">https://chitrakshkataria.dev/</a>
