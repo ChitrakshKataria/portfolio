@@ -1,15 +1,21 @@
-interface Experince {
+interface Projects {
     title: string;
     company: string;
     date: string;
     desc: string;
 }
 
-export const experince: Experince[] = [
+export const projects: Projects[] = [
     {
-        title: "Example Title",
-        company: "Example company",
+        title: "Personal Portfolio",
+        company: "",
         date: "Jan 2026 - Aug 2029",
-        desc: "Example description",
+        desc: "Example desc testtesttesttesttesttesttesttesttest",
+    },
+    {
+        title: "Somethign Here",
+        company: "",
+        date: "Jan 2026 - Aug 2029",
+        desc: "Example desc testtesttesttesttesttesttesttesttest",
     },
 ]
