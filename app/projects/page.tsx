@@ -13,6 +13,7 @@ export default function projectPage() {
           <DisplayCard
             key={project.title}
             title={project.title}
+            date={project.date}
             description={project.desc}
           />
         );
