@@ -1,6 +1,11 @@
 # Portfolio
 This is my perosnal that i built with Next.js. For front end it uses react and tailwind css, as for backend its all done in TypeScript JS. This techstack gives portfolio a modern structure. It includes my project, work, skills and more information abot me.
 
+## Live demo?
+Try it out at: <a href="https://chitrakshkataria.dev/">https://chitrakshkataria.dev/</a>
+<a href="https://chitrakshkataria.dev/"><img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/39db18e1-d581-4563-871a-773cbe090c75" /></a>
+
+
 ## Run localy
 
 Step 1: Clon the repository:
