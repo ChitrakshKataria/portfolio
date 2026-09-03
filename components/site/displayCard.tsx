@@ -12,7 +12,7 @@ const DisplayCard = ({
     <Link href="/">
       {" "}
       {/* Add a dynamic rout here later on  */}
-        <div className="flex w-full items-center justify-between gap-8 border px-8 py-7 text-left">        <div className="flex flex-col items-start gap-2">
+        <div className="flex w-full items-center justify-between gap-8 border px-8 text-left">        <div className="flex flex-col items-start gap-2">
           <div className="text-[var(--muted)] text-xs">
             <p>{date}</p>
           </div>
@@ -25,7 +25,7 @@ const DisplayCard = ({
             </p>
           </div>
         </div>
-        <span className="flex justify-end item-center shrink-0 font-mono text-[15px] hover:underline">
+        <span className="flex justify-end item-center shrink-0 font-mono text-[15px] hover:underline hover:text-[var(--accent)]">
           View
         </span>
       </div>
