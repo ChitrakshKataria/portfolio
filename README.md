@@ -1,5 +1,5 @@
 # Portfolio
-This is my perosnal portfolio that i built with Next.js. For frontend it uses react and tailwind css, as for backend its all done in TypeScript JS. This techstack gives portfolio a modern structure. It includes my projects, work, skills and more information abot me. The build branch in this repo is the one i actualy depploy to my domain name so ignore it. 
+This Web-App was buildt without the use of AI. AI was only used as a supporting tool. This is my perosnal portfolio that i built with Next.js. For frontend it uses react and tailwind css, as for backend its all done in TypeScript JS. This techstack gives portfolio a modern structure. It includes my projects, work, skills and more information abot me. The build branch in this repo is the one i actualy depploy to my domain name so ignore it. 
 
 ## Live demo?
 Try it out at: [https://chitrakshkataria.dev/](https://chitrakshkataria.dev/)
