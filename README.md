@@ -3,7 +3,9 @@ This is my perosnal portfolio that i built with Next.js. For frontend it uses re
 
 ## Live demo?
 Try it out at: <a href="https://chitrakshkataria.dev/">https://chitrakshkataria.dev/</a>
-<a href="https://chitrakshkataria.dev/"><img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/39db18e1-d581-4563-871a-773cbe090c75" /></a>
+[https://chitrakshkataria.dev/](https://chitrakshkataria.dev/)
+
+[![Portfolio preview](https://github.com/user-attachments/assets/39db18e1-d581-4563-871a-773cbe090c75)](https://chitrakshkataria.dev/)
 
 
 ## Run localy
