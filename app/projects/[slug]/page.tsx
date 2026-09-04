@@ -21,8 +21,9 @@ export default async function dynamicProjectPage(props: {
   return (
     <div>
       <p className="text-[var(--muted)]">{project.date}</p>
-      <h1 className="text-2xl">{project.title}</h1>
-      <ReactMarkdown>{readme}</ReactMarkdown>
+      <article className="prose dark:prose-invert max-w-none">
+        <ReactMarkdown>{readme}</ReactMarkdown>
+      </article>
 
 
     </div>
