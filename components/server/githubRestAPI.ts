@@ -4,15 +4,14 @@ export async function getReadmeFromGH(owner: string, repo: string) {
         headers: {
             Accept: "application/vnd.github.raw+json"
         },
-        next: {
-            revalidate: 36000,
-        },
+            cache: "no-store", //for development only
     }
   )
 
   if (!response.ok) {
-    return null;
-  }
+    throw new Error("Failed to fetch README fomr GitHub")
+
+}
 
   return response.text()
 }
