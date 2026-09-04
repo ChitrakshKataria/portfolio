@@ -11,7 +11,7 @@ const DisplayCard = ({
   slug = "",
 }) => {
   return (
-    <Link href={`/projects/${slug}`}>
+    <Link href={ghLink}>
       <div className="flex w-full items-center justify-between border border-[var(--muted)] px-3 text-left rounded-[3px]">
         <div className="flex flex-col items-start ">
           <div className="text-[var(--muted)] text-xs">
