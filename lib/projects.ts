@@ -1,3 +1,5 @@
+import "server-only";
+
 interface Projects {
     title: string;
     company: string;
@@ -17,3 +19,14 @@ export const projects: Projects[] = [
         slug: "portfolio",
     },
 ]
+
+
+
+
+
+
+// As i dont have a databse i will temporarily be using this will as one.
+// I am exporting a function that gives all the info about a project based on the drilled slug. 
+export function getProjectBySlug(slug: string) {
+    return projects.find((project) => project.slug === slug)
+}
