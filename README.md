@@ -27,6 +27,9 @@ npm run dev
 ## Want to make it your own?
 Edit the **siteConfig.ts** file in /portfolio/lib. Replace all of my infoamation with your own. Feel free to edit and add to the site as much as you want.
 
+## Short Note
+The site is not yet responsive. That is a feature coming soon.
+
 ## Licence
 This repository is licensed under the MIT Licence
 If you use or redistribute this project, please keep the original copyright and licence notice. Credit is appreciated.
