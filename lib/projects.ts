@@ -22,7 +22,7 @@ export const projects: Projects[] = [
         title: "Samuel Monty Lewis' Blog",
         company: "",
         date: "Apr 21 - Apr 25",
-        desc: "This is a blog page i created for my friend codded by autonomous ai models also known as Agents.",
+        desc: "This is a blog page i created for my friend, the project uses a modern techstack.",
         ghLink: "https://github.com/samuelmontylewis/samuelmontylewis.com",
         slug:"samuelmontylewis-blog"
     },
@@ -30,7 +30,7 @@ export const projects: Projects[] = [
         title: "AI-Driven development dashboard",
         company: "",
         date: "May 3 - May 5",
-        desc: "This is an AI-driven dashbord that runs in your terminal and makes it easy to vibe code apps with the help of coding agents",
+        desc: "This is an AI-driven dashboard that runs in your terminal and makes it easy to code applications and webablications with the help of coding agents",
         ghLink: "https://github.com/ChitrakshKataria/AI-Driven-vibecoding-dev-dashbord",
         slug: "devdash-script"
     },
