@@ -15,8 +15,8 @@ export const projects: Projects[] = [
         company: "",
         date: "Sep 25th - Oct 5",
         desc: "A collection/log of some basic neural networks / DeepLearning models i wrote in both PyTorch and pure Pyhton. The goal with this project is to understand the underlying math and concepts behing neural networks.",
-        ghLink: "https://github.com/ChitrakshKataria/AI-Driven-vibecoding-dev-dashbord",
-        slug: "devdash-script"
+        ghLink: "https://github.com/ChitrakshKataria/ML-DL-Basics",
+        slug: "ml-dl-basics"
     },
     {
         title: "Personal Portfolio",
