@@ -28,7 +28,7 @@ npm run dev
 Edit the **siteConfig.ts** file in /portfolio/lib. Replace all of my infoamation with your own. Feel free to edit and add to the site as much as you want.
 
 ## Short Note
-The site is not yet responsive. That is a feature coming soon.
+The site is hosted on the free tier of Supabase, which causes the project to pause after some inactivity. So the live demo may not work at certain times. Alos the site is not yet responsive.
 
 ## Licence
 This repository is licensed under the MIT Licence
