@@ -2,8 +2,11 @@
 
 import React from 'react'
 import { siteConfig } from '@/lib/siteConfig';
+import { usePathname } from 'next/navigation';
 
 const ClientFooter = () => {
+  const pathname = usePathname()
+  if (pathname === "/experiments" || pathname.startsWith("/experiments/")) return null
   return (
     <div className='flex min-h-full flex-col'>
     <div className="flex justify-center mt-3 text-sm">

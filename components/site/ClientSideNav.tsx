@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 
 const SideNav = () => {
     const pathname = usePathname()
+    if (pathname === "/experiments" || pathname.startsWith("/experiments/")) return null
   return (
     <nav className="flex flex-row flex-wrap justify-center gap-x-6 gap-y-2 text-sm sm:flex-col sm:flex-nowrap sm:items-end sm:gap-x-0 sm:gap-y-2 sm:text-right">
         <Link href="/" className={ pathname === "/" ? "text-[var(--accent)]" : "text-[var(--foreground)]" }>Home</Link>

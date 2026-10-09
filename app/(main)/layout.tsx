@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import SideNav from '../components/site/ClientSideNav'
+import "../globals.css";
+import SideNav from '@/components/site/ClientSideNav'
 import { siteConfig } from "@/lib/siteConfig";
-import ClientFooter from "../components/site/ClientFooter"
+import ClientFooter from "@/components/site/ClientFooter"
 import ClientSeperator from "@/components/site/ClientSeperator";
 
 

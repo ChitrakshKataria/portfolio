@@ -1,37 +1,78 @@
 import Link from "next/link";
-import React from "react";
+// AI Generated CSS
 
-const DisplayCard = ({
-  // reciving  the drilled information with default values:
+interface DisplayCardProps {
+  title?: string;
+  company?: string;
+  date?: string;
+  description?: string;
+  ghLink?: string;
+  slug?: string;
+}
+
+export default function DisplayCard({
   title = "Example title",
-  company = "Example company",
-  date = "20 Jun - 31 Jun",
-  description = "Example description ",
-  ghLink = "https://github.com/ChitrakshKataria", // default link to my gh PROFILE :) (I might remove this later on this page as its no longer needed)
+  company = "N/A",
+  date = "20 Jun - 31 Jul",
+  description = "Example description",
+  ghLink = "https://github.com/ChitrakshKataria",
   slug = "",
-}) => {
+}: DisplayCardProps) {
   return (
-    <Link href={ghLink}>
-      <div className="flex w-full items-center justify-between border border-[var(--muted)] px-3 text-left rounded-[3px]">
-        <div className="flex flex-col items-start ">
-          <div className="text-[var(--muted)] text-xs">
-            <p className="mt-4 ml-3">{date}</p>
-          </div>
-          <div className="text-left">
-            <h2 className="font-mono text-[20px] font-bold leading-none] ml-3">
-              {title}
-            </h2>
-            <p className="font-mono text-[14px] leading-normal mt-4 mb-4 ml-3">
-              {description}
-            </p>
-          </div>
+    <Link
+      href={ghLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`View ${title}`}
+      className="
+        group block w-full
+        rounded-xl border border-gray-200
+        bg-[var(--muted-bg)] p-6
+        transition-all duration-300
+        hover:-translate-y-1
+        hover:border-gray-400
+        hover:shadow-lg
+        dark:border-white/10
+        dark:hover:border-white/25
+      "
+    >
+      <article className="flex h-full flex-col">
+
+        {/* Date and arrow */}
+        <div className="mb-5 flex items-center justify-between">
+          <span className="text-xs font-medium tracking-wider text-gray-500 dark:text-gray-400">
+            {date}
+          </span>
+
+          <span className="text-lg text-gray-400 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]">
+            ↗
+          </span>
         </div>
-        <span className="flex justify-end item-center shrink-0 font-mono text-[15px] hover:underline hover:text-[var(--accent)] ml-25">
-          View
-        </span>
-      </div>
+
+        {/* Title */}
+        <h2 className="font-mono text-xl font-semibold tracking-tight transition-colors group-hover:text-[var(--accent)]">
+          {title}
+        </h2>
+
+        {company !== "N/A" && (
+          <p className="mt-2 text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">
+            {company}
+          </p>
+        )}
+
+        {/* Description */}
+        <p className="mt-5 flex-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+          {description}
+        </p>
+
+        {/* Footer */}
+        <div className="mt-8 flex items-center justify-end border-t border-gray-200 pt-4 dark:border-white/10">
+          <span className="text-sm font-medium transition-colors group-hover:text-[var(--accent)]">
+            View project ↗
+          </span>
+        </div>
+
+      </article>
     </Link>
   );
-};
-
-export default DisplayCard;
+}
