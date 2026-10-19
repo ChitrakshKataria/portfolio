@@ -9,6 +9,7 @@ interface DisplayCardProps {
   ghLink?: string;
   scolarLink?: string;
   arXiv?: string;
+  slug?: string;
 }
 
 export default function DisplayCard({
