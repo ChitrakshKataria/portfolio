@@ -1,5 +1,5 @@
+
 import Link from "next/link";
-// AI Generated CSS
 
 interface DisplayCardProps {
   title?: string;
@@ -7,23 +7,27 @@ interface DisplayCardProps {
   date?: string;
   description?: string;
   ghLink?: string;
-  slug?: string;
+  scolarLink?: string;
+  arXiv?: string;
 }
 
 export default function DisplayCard({
-  title = "Example title",
-  company = "N/A",
-  date = "20 Jun - 31 Jul",
-  description = "Example description",
-  ghLink = "https://github.com/ChitrakshKataria",
-  slug = "",
+  title = "",
+  company = "",
+  date = "",
+  description = "",
+  ghLink = "",
+  scolarLink = "",
+  arXiv = "",
 }: DisplayCardProps) {
+  const links = [
+    { label: "GitHub", href: ghLink },
+    { label: "Google Scholar", href: scolarLink },
+    { label: "arXiv", href: arXiv },
+  ].filter((link) => link.href.trim());
+
   return (
-    <Link
-      href={ghLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={`View ${title}`}
+    <div
       className="
         group block w-full
         rounded-xl border border-gray-200
@@ -34,45 +38,55 @@ export default function DisplayCard({
         hover:shadow-lg
         dark:border-white/10
         dark:hover:border-white/25
+        z-10
       "
     >
       <article className="flex h-full flex-col">
-
-        {/* Date and arrow */}
-        <div className="mb-5 flex items-center justify-between">
-          <span className="text-xs font-medium tracking-wider text-gray-500 dark:text-gray-400">
+        {/* Date */}
+        {date.trim() && (
+          <div className="mb-5 text-xs font-medium tracking-wider text-gray-500 dark:text-gray-400">
             {date}
-          </span>
-
-          <span className="text-lg text-gray-400 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[var(--accent)]">
-            ↗
-          </span>
-        </div>
+          </div>
+        )}
 
         {/* Title */}
-        <h2 className="font-mono text-xl font-semibold tracking-tight transition-colors group-hover:text-[var(--accent)]">
-          {title}
-        </h2>
+        {title.trim() && (
+          <h2 className="font-mono text-xl font-semibold tracking-tight transition-colors group-hover:text-[var(--accent)]">
+            {title}
+          </h2>
+        )}
 
-        {company !== "N/A" && (
+        {/* Company */}
+        {company.trim() && (
           <p className="mt-2 text-xs font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400">
             {company}
           </p>
         )}
 
         {/* Description */}
-        <p className="mt-5 flex-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-          {description}
-        </p>
+        {description.trim() && (
+          <p className="mt-5 flex-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            {description}
+          </p>
+        )}
 
-        {/* Footer */}
-        <div className="mt-8 flex items-center justify-end border-t border-gray-200 pt-4 dark:border-white/10">
-          <span className="text-sm font-medium transition-colors group-hover:text-[var(--accent)]">
-            View project ↗
-          </span>
-        </div>
-
+        {/* External Links */}
+        {links.length > 0 && (
+          <div className="mt-8 flex flex-wrap items-center gap-5 border-t border-gray-200 pt-4 dark:border-white/10">
+            {links.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium transition-colors hover:text-[var(--accent)]"
+              >
+                {link.label} ↗
+              </Link>
+            ))}
+          </div>
+        )}
       </article>
-    </Link>
+    </div>
   );
 }

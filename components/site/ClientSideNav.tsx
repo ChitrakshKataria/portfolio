@@ -12,6 +12,7 @@ const SideNav = () => {
         <Link href="/" className={ pathname === "/" ? "text-[var(--accent)]" : "text-[var(--foreground)]" }>Home</Link>
         <Link href="/blog" className={ pathname === "/blog" ? "text-[var(--accent)]" : "text-[var(--foreground)]" }>Blog</Link>
         <Link href="/about" className={ pathname === "/about" ? "text-[var(--accent)]" : "text-[var(--foreground)]" }>About</Link>
+        <Link href="/research" className={ pathname === "/research" ? "text-[var(--accent)]" : "text-[var(--foreground)]" }>Research</Link>
         <Link href="/projects" className={ pathname === "/projects" ? "text-[var(--accent)]" : "text-[var(--foreground)]" }>Projects</Link>
         <Link href="/experince" className={ pathname === "/experince" ? "text-[var(--accent)]" : "text-[var(--foreground)]" }>Experince</Link>
     </nav>

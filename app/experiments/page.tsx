@@ -47,23 +47,23 @@ export default function Experiments() {
 
                     {/* Footer */}
                     <div className="mt-8 flex items-center justify-between border-t border-gray-200 pt-4 dark:border-white/10">
-                        <Link
+                        <a
                             href={experiment.ghLink}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-sm font-medium transition-opacity hover:opacity-60"
                         >
                             GitHub ↗
-                        </Link>
+                        </a>
 
-                        <Link
+                        <a
                             href={experiment.liveDemo}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-sm font-medium transition-opacity hover:opacity-60"
                         >
                             Live demo ↗
-                        </Link>
+                        </a>
                     </div>
                 </article>
             ))}

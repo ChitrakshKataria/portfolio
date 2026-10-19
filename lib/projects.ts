@@ -13,34 +13,46 @@ export const projects: Projects[] = [
     {
         title: "Machine/Deep Learning - Basics",
         company: "",
-        date: "Sep 25th - Oct 5",
+        date: "25th September 2026 - 5th October 2026",
         desc: "A collection/log of some basic neural networks / DeepLearning models i wrote in both PyTorch and pure Pyhton. The goal with this project is to understand the underlying math and concepts behing neural networks.",
         ghLink: "https://github.com/ChitrakshKataria/ML-DL-Basics",
         slug: "ml-dl-basics"
     },
+    
     {
         title: "Personal Portfolio",
         company: "",
-        date: "Aug 29 - Sep 3",
+        date: "29th August 2026 - Ongoing...",
         desc: "This is a early build of my portfolio created in Next.Js. Most parts of the site are incomplete as of 3. sep. More functionality will be added!",
         ghLink: "https://github.com/ChitrakshKataria/portfolio",
         slug: "portfolio",
     },
+
+    {
+        title: "AI-Driven development dashboard",
+        company: "",
+        date: "3rd May 2026 - 5th May 2026",
+        desc: "This is an AI-driven dashboard that runs in your terminal and makes it easy to code applications and webablications with the help of coding agents",
+        ghLink: "https://github.com/ChitrakshKataria/AI-Driven-vibecoding-dev-dashbord",
+        slug: "devdash-script"
+    },
+
     {
         title: "Samuel Monty Lewis' Blog",
         company: "",
-        date: "Apr 21 - Apr 25",
+        date: "21st April 2026 - 25th April 2026",
         desc: "This is a blog page i created for my friend, the project uses a modern techstack.",
         ghLink: "https://github.com/samuelmontylewis/samuelmontylewis.com",
         slug:"samuelmontylewis-blog"
     },
+        
     {
-        title: "AI-Driven development dashboard",
+        title: "Simulation in Python",
         company: "",
-        date: "May 3 - May 5",
-        desc: "This is an AI-driven dashboard that runs in your terminal and makes it easy to code applications and webablications with the help of coding agents",
-        ghLink: "https://github.com/ChitrakshKataria/AI-Driven-vibecoding-dev-dashbord",
-        slug: "devdash-script"
+        date: "21st April 2026 - 25th April 2026",
+        desc: "A archive of all the simulations in python",
+        ghLink: "https://github.com/ChitrakshKataria/Simulations-in-Python",
+        slug:"simulation-in-python"
     },
 ]
 

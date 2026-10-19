@@ -1,17 +1,21 @@
+
 import DisplayCard from "@/components/site/displayCard";
 import { projects } from "@/lib/projects";
 
-export default function projectPage() {
+export default function ProjectPage() {
   return (
-    <div>
+    <div className="w-full md:w-[min(850px,calc(100vw-300px))] md:max-w-none">
       <h1 className="text-2xl font-bold">Project Page</h1>
-      <p className="mt-6">A list of all the projects i have worked on</p>
-      <div className="my-6 h-[1px] w-full" />
-      <div className="flex flex-col gap-y-5">
-      {projects.map((project) => {
-        return (
+
+      <p className="mt-6">
+        A list of all the projects I have worked on.
+      </p>
+
+      <div className="my-6 h-px w-full bg-border" />
+
+      <div className="grid w-full grid-cols-1 gap-5 lg:grid-cols-2">
+        {projects.map((project) => (
           <DisplayCard
-            // Drilling the information through
             key={project.title}
             title={project.title}
             date={project.date}
@@ -19,8 +23,7 @@ export default function projectPage() {
             ghLink={project.ghLink}
             slug={project.slug}
           />
-        );
-      })}
+        ))}
       </div>
     </div>
   );
