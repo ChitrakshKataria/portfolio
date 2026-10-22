@@ -9,6 +9,7 @@ interface Reserch{
     ghLink: string
     scolarLink: string
     arXiv: string
+    ssrn: string
     slug: string
 }
 
@@ -21,6 +22,7 @@ export const research: Reserch[] = [
         ghLink: "https://github.com/ChitrakshKataria/SYMMET",
         scolarLink: "",
         arXiv: "",
+        ssrn: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7650698",
         slug: "SYMMET",
     },
 ]

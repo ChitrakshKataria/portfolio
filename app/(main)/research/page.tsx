@@ -8,7 +8,7 @@ export default function ResearchPage() {
       <h1 className="text-2xl font-bold">Research</h1>
 
       <p className="mt-6">
-        A list of all the research projects I have worked on.
+        A list of all the research papers I have worked on.
       </p>
 
       <div className="my-6 h-px w-full bg-border" />
@@ -24,6 +24,7 @@ export default function ResearchPage() {
             ghLink={project.ghLink}
             scolarLink={project.scolarLink}
             arXiv={project.arXiv}
+            ssrn={project.ssrn}
           />
         ))}
       </div>

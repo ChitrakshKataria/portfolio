@@ -6,9 +6,11 @@ interface DisplayCardProps {
   company?: string;
   date?: string;
   description?: string;
+  desc?: string;
   ghLink?: string;
   scolarLink?: string;
   arXiv?: string;
+  ssrn?: string;
   slug?: string;
 }
 
@@ -17,15 +19,21 @@ export default function DisplayCard({
   company = "",
   date = "",
   description = "",
+  desc = "",
   ghLink = "",
   scolarLink = "",
   arXiv = "",
+  ssrn = "",
 }: DisplayCardProps) {
+  const cardDescription = description.trim() || desc.trim();
+
+  // Only show links that have a URL
   const links = [
     { label: "GitHub", href: ghLink },
     { label: "Google Scholar", href: scolarLink },
     { label: "arXiv", href: arXiv },
-  ].filter((link) => link.href.trim());
+    { label: "SSRN", href: ssrn },
+  ].filter((link) => link.href.trim() !== "");
 
   return (
     <div
@@ -65,9 +73,9 @@ export default function DisplayCard({
         )}
 
         {/* Description */}
-        {description.trim() && (
+        {cardDescription && (
           <p className="mt-5 flex-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-            {description}
+            {cardDescription}
           </p>
         )}
 
