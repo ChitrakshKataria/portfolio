@@ -11,5 +11,6 @@ export const siteConfig = {
     socials: {
         github: "https://github.com/ChitrakshKataria",
         linkedin: "https://www.linkedin.com/in/chitraksh-katatia/",
+        orcid: "https://orcid.org/0009-0005-0582-9007",
     },
 } as const
