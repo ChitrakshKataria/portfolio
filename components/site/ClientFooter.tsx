@@ -9,14 +9,20 @@ const ClientFooter = () => {
   if (pathname === "/experiments" || pathname.startsWith("/experiments/")) return null
   return (
     <div className='flex min-h-full flex-col'>
-    <div className="flex justify-center mt-3 text-sm">
-     <div className='space-x-1'>
-      <a href={siteConfig.socials.github} className="text-sm ml-3 underline" target="_blank">Github</a>
-      <a href={siteConfig.socials.linkedin} className="text-sm ml-1 underline z-10" target="_blank">LinkedIn</a>
-      <a href={siteConfig.socials.orcid} className='text-sm ml-1 underline'>ORCID</a>
-      <div className='mt-2 flex'>
-      <p>Email:</p>
-      <a href={`mailto:${siteConfig.email_personal}`} className="ml-2 text-[var(--muted)] z-10">{siteConfig.email_personal}</a>
+    <div className="text-center mt-3 text-sm">
+     <div>
+      <div>
+      <a href={siteConfig.socials.github} className="text-sm ml-3 text-[var(--accent)]" target="_blank">Github</a>
+      <span>|</span>
+      <a href={siteConfig.socials.googlescholar} className='text-sm ml-1 text-[var(--accent)]' target='_blank'>Google Scholar</a>
+      <span>|</span>
+      <a href={siteConfig.socials.orcid} className='text-sm ml-1 text-[var(--accent)]' target='_blank'>ORCID</a>
+      <span>|</span>
+      <a href={siteConfig.socials.linkedin} className="text-sm ml-1 z-10 text-[var(--accent)]" target="_blank">LinkedIn</a>
+      </div>
+      <div className='mt-2 text-center'>
+      <span>Email:</span>
+      <a href={`mailto:${siteConfig.email_personal}`} className="ml-2 text-[var(--muted)] z-10 underline text-[var(--accent)]">{siteConfig.email_personal}</a>
       </div>
     </div>      
     </div>

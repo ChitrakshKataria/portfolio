@@ -12,5 +12,6 @@ export const siteConfig = {
         github: "https://github.com/ChitrakshKataria",
         linkedin: "https://www.linkedin.com/in/chitraksh-katatia/",
         orcid: "https://orcid.org/0009-0005-0582-9007",
+        googlescholar: "https://scholar.google.com/citations?user=gISb05YAAAAJ&hl=no&oi=sra"
     },
 } as const
